@@ -203,6 +203,18 @@ ol, ul { list-style: none; }
   transform: none;
 }
 
+.btn-secondary {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.09);
+  border-color: rgba(255,255,255,0.15);
+  color: var(--text-primary);
+}
+
 .btn-icon {
   width: 16px;
   height: 16px;
@@ -232,6 +244,40 @@ ol, ul { list-style: none; }
 }
 
 .btn-tweet-card svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
+/* Copy to clipboard button — lives beside the Tweet button */
+.btn-copy-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(15,20,35,0.8);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.btn-copy-card:hover {
+  background: rgba(34,197,94,0.1);
+  border-color: rgba(34,197,94,0.3);
+  color: var(--badge-feature);
+}
+
+.btn-copy-card.copied {
+  background: rgba(34,197,94,0.12);
+  border-color: rgba(34,197,94,0.35);
+  color: var(--badge-feature);
+}
+
+.btn-copy-card svg {
   width: 13px;
   height: 13px;
   flex-shrink: 0;
@@ -352,6 +398,13 @@ ol, ul { list-style: none; }
   justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.section-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
 }
 
 /* Badge */
