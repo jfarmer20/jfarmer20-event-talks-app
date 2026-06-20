@@ -1,0 +1,41 @@
+# ── Python ─────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# ── Environment & secrets ───────────────────────────────────────
+.env
+.env.*
+*.local
+
+# ── TypeScript / Node ───────────────────────────────────────────
+node_modules/
+static/main.js
+static/main.js.map
+
+# ── macOS ───────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── Editor & IDE ────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Flask ───────────────────────────────────────────────────────
+instance/
+flask_session/
+
+# ── Logs ────────────────────────────────────────────────────────
+*.log
